@@ -49,7 +49,7 @@ public class AdminController {
         Optional<User> user = userService.getById(id);
         List<Role> roles = userService.allRoles();
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("editUser");
+        modelAndView.setViewName("adminPage");
         modelAndView.addObject("getRole", roles);
         modelAndView.addObject("user", user.get());
         return modelAndView;
@@ -89,7 +89,7 @@ public class AdminController {
         List<Role> roles = userService.allRoles();
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("getRole", roles);
-        modelAndView.setViewName("addUser");
+        modelAndView.setViewName("adminPage");
         return modelAndView;
     }
 

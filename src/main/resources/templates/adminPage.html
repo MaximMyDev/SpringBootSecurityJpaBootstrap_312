@@ -54,11 +54,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#newUser" role="tab" aria-controls="new">New User</a>
                             </li>
-                            <!--
-                               <li class="nav-item">
-                                   <a class="nav-link" data-toggle="tab" href="#userTable" role="tab" aria-controls="profile">Role Table</a>
-                               </li>
-                               -->
                         </ul>
                         <!--list tab user -->
                         <div class="tab-content">
@@ -185,24 +180,6 @@
                                     </tr>
                                 </table>
                             </div>
-                            <!--list tab role
-                               <div class="tab-pane" id="userTable" role="tabpanel">
-                                   <div class="tab-content">
-                                       <table class="table table-striped">
-                                           <tr>
-                                               <th>ID</th>
-                                               <th>Role</th>
-                                           </tr>
-                                           <tr th:each ="role : ${roleList}">
-                                               <td th:text="${role.id}">Номер</td>
-                                               <td th:text="${role.role}">Роль</td>
-                                               <td><a th:href="${'/role/edit/' + role.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
-                                               <td><a th:href="${'/role/delete/' + role.id}"><span class="glyphicon glyphicon-trash"></span></a></td>
-                                           </tr>
-                                       </table>
-                                   </div>
-                               </div>
-                               -->
                             <!--tab new user -->
                             <div class="tab-pane" id="newUser" role="tabpanel">
                                 <div class="tab-content">
